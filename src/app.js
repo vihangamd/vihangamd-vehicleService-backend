@@ -20,10 +20,10 @@ import { auth } from "express-openid-connect";
 const config = {
   authRequired: false,
   auth0Logout: true,
-  secret: "a_long_randomly_generated_string_stored_in_env",
+  secret: "",
   baseURL: "http://localhost:3000",
-  clientID: "xU2HfuOc2lS5551fWKMnE5ES3EPFCwsi",
-  issuerBaseURL: "https://vmd4.us.auth0.com",
+  clientID: "",
+  issuerBaseURL: "",
 };
 
 app.use(auth(config));
